@@ -1,0 +1,336 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Especialidad</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="logo" type="image/x-icon">
+
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #1c1c1c;
+}
+a{
+    text-decoration: none;
+    color: white;
+
+}
+header{
+    display: flex;
+    background-color: #14161A;
+    min-width: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+  
+}
+.logo img{
+    height: 100px;
+    margin-right: 12px;
+}
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+nav a:hover{
+    color: #f0db4f;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1100px;
+    margin: auto;
+}
+.box{
+    width: 300px;
+    height: 400px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    margin: 20px;
+    border: 3px solid #fff;
+}   
+.box img{
+    width: 100%;
+    height: 100%;
+}
+@media(max-width:680px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    
+    }
+    }
+
+    .contenedor_imagenes{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100vh;
+        flex-wrap: wrap;
+}
+
+h1{
+    text-align: center;
+    color: azure;
+    display: float;
+    font-size: 25px;
+    padding: 10px;
+}
+ul{
+    color: azure;
+    font-size: 25px;
+    padding: 20px;
+}
+.encabezado{ 
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 400px
+}
+p{
+    color: azure;
+    font-size: 25px;
+    padding: 20px;
+  }
+.box{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    border: 3px solid #fff;
+    
+}
+
+.box img{
+    width: 100%;
+    height: 100%;
+}
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transform: scale(0);
+    transition: .3s ease;
+}   
+.box:hover .capa{
+    transform: scale(1);
+}
+
+
+
+
+  .mapa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    padding: 5px;
+    margin-bottom: 20px;
+
+  }
+  .contacto{
+    padding: 5px ;
+
+  }
+form {
+    width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: azure;
+  }
+
+  
+
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+
+    </style>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header>
+        <a class="logo">
+            <img src="./logo.jpeg" alt="logo">
+            <h2 class="nombre-empresa">EN BUSCA DE TU ESPECIALIDAD</h2>
+        </a>
+        <nav>
+            <a href="#contacto" class="nav-link">CONTACTO</a>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>NOSOTROS</h1>
+    <br>
+    <br>
+    <p >
+        Cada institución educativa es un mundo en sí misma, y el IPEMyT 319 es un universo en constante evolución donde el aprendizaje se convierte en una aventura estimulante. Este colegio secundario, situado en Córdoba Capital, se distingue por ofrecer una amplia variedad de especialidades, cada una de las cuales abre las puertas a un mundo de oportunidades y descubrimientos.
+    </p>
+
+    <p >
+        En el IPEMyT 319, no solo encontrarás aulas y pasillos, sino portales hacia tres emocionantes especialidades: Educación Física, Electromecánica e Informática. Cada una de estas disciplinas representa una senda única, diseñada para nutrir tanto el cuerpo como la mente, y preparar a los estudiantes para los desafíos del mundo contemporáneo.
+    </p>
+
+    <p >
+        A lo largo de esta exploración, te invitamos a sumergirte en las particularidades de cada especialidad, descubriendo cómo la Educación Física fomenta la salud y el bienestar, cómo la Electromecánica despierta la pasión por la ingeniería y cómo la Informática abre las puertas al vasto mundo de la tecnología.
+    </p>
+    <br>
+    <br>
+    <h1>ESPECIALIDADES</h1>
+ <div class="contenedor_imagenes">
+    <div class="box">
+        <img src="./img1.jpg" alt="">
+        <div class="capa">
+            
+            <h1>ELECTROMECÀNICA</h1>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="./img2.jpg" alt="">
+        <div class="capa">
+            <h2>INFORMÀTICA</h2>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="./img3.jpg" alt="">
+        <div class="capa">
+            <h2>ED FISICA</h2>
+        </div>
+    </div>
+    <h1>ELECTROMECÀNICA</h1>
+    <p>Perfil de la Modalidad Técnico Profesional:
+        El perfil de una modalidad integra saberes agrupados en ámbitos del conocimiento humanístico, social, científico y técnico, con énfasis en áreas específicas. El Técnico en Equipos e Instalaciones Electromecánicas adquiere competencias para:
+    </p>
+    <br>
+    <ul style="text-align: left;">
+        <li>Aplicar conocimientos de ciencias básicas en contextos productivos.</li>
+        <li>Utilizar eficientemente energía y materiales en la producción.</li>
+        <li>Participar en proyectos tecnológicos productivos.</li>
+        <li>Comprender regulaciones ambientales y laborales.</li>
+        <li>Colaborar en asesoramiento técnico y gestión comercial.</li>
+        <li>Poseer conocimientos básicos de inglés técnico.</li>
+        <li>Aplicar estadística.</li>
+    </ul>
+    <br>
+    <br>
+    <p> Perfil Profesional del Técnico en Equipos e Instalaciones Electromecánicas:
+        El Técnico en Equipos e Instalaciones Electromecánicas es competente para:
+    </p>
+    <br>
+    <ul style="text-align: left;">
+        <li>Proyectar equipos y sistemas electromecánicos.</li>
+        <li>Realizar ensayos de materiales y componentes.</li>
+        <li>Operar equipos y máquinas.</li>
+        <li>Realizar mantenimiento de equipos electromecánicos.</li>
+        <li>Montar componentes y dispositivos.</li>
+        <li>Instalar sistemas eléctricos.</li>
+        <li>Asesorar y comercializar equipamiento electromecánico.</li>
+        <li>Generar emprendimientos.</li>
+    </ul>
+
+    <br>
+    <br>
+    <br>
+<div class="encabezado">
+    
+    <h1>DONDE ENCONTRARNOS</h1>
+    <p>Gracias por visitar nuestra página web. Estamos encantados de que estés interesado en encontrarnos y te proporcionamos toda la información necesaria para llegar hasta nosotros.
+        Para facilitar el proceso de llegar hasta nosotros, incorporamos un mapa interactivo de Google Maps.
+    </p>
+    <br>
+    <br>
+    <br>
+
+    <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.2147223887487!2d-64.16101002498038!3d-31.463278998518703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a33086b73723%3A0x964a4543bb7ca2c3!2sIPEMyT%20319%20Roberto%20Fontanarrosa!5e0!3m2!1ses-419!2sar!4v1698347949555!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <h1 id="contacto">CONTACTO</h1>
+<form action="/enviar-mensaje" method="POST">
+    <label for="nombre">Nombre:</label><br />
+    <input type="text" id="nombre" name="nombre" required /><br />
+    <label for="email">Email:</label><br />
+    <input type="email" id="email" name="email" required /><br />
+    <label for="mensaje">Mensaje:</label><br />
+    <textarea id="mensaje" name="mensaje" required></textarea><br />
+    <input type="submit" value="Pedir Info" />
+</form>
+</div>
+
+
+
+</body>
+</html>
